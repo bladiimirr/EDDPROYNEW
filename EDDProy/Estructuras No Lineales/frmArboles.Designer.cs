@@ -52,7 +52,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // txtDato
             // 
             this.txtDato.Location = new System.Drawing.Point(85, 50);
-            this.txtDato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDato.Margin = new System.Windows.Forms.Padding(2);
             this.txtDato.Name = "txtDato";
             this.txtDato.Size = new System.Drawing.Size(99, 22);
             this.txtDato.TabIndex = 0;
@@ -63,7 +63,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAgregar.Location = new System.Drawing.Point(212, 34);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 55);
             this.btnAgregar.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace EDDemo.Estructuras_No_Lineales
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtArbol.Location = new System.Drawing.Point(39, 233);
-            this.txtArbol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArbol.Margin = new System.Windows.Forms.Padding(2);
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
             this.txtArbol.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -92,7 +92,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.Location = new System.Drawing.Point(352, 34);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(126, 55);
             this.btnLimpiar.TabIndex = 1;
@@ -107,7 +107,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnGrafica.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrafica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnGrafica.Location = new System.Drawing.Point(830, 32);
-            this.btnGrafica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrafica.Name = "btnGrafica";
             this.btnGrafica.Size = new System.Drawing.Size(185, 86);
             this.btnGrafica.TabIndex = 3;
@@ -121,7 +121,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnRecorrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecorrer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRecorrer.Location = new System.Drawing.Point(639, 442);
-            this.btnRecorrer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecorrer.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecorrer.Name = "btnRecorrer";
             this.btnRecorrer.Size = new System.Drawing.Size(376, 40);
             this.btnRecorrer.TabIndex = 4;
@@ -145,10 +145,10 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnCrearArbol.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCrearArbol.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearArbol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCrearArbol.Location = new System.Drawing.Point(637, 37);
-            this.btnCrearArbol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearArbol.Location = new System.Drawing.Point(635, 37);
+            this.btnCrearArbol.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearArbol.Name = "btnCrearArbol";
-            this.btnCrearArbol.Size = new System.Drawing.Size(146, 81);
+            this.btnCrearArbol.Size = new System.Drawing.Size(154, 81);
             this.btnCrearArbol.TabIndex = 6;
             this.btnCrearArbol.Text = "Crear Arbol";
             this.btnCrearArbol.UseVisualStyleBackColor = false;
@@ -158,7 +158,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.txtNodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNodos.Location = new System.Drawing.Point(637, 122);
-            this.txtNodos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNodos.Margin = new System.Windows.Forms.Padding(2);
             this.txtNodos.Minimum = new decimal(new int[] {
             1,
             0,
@@ -278,7 +278,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDato);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmArboles";
             this.Text = "frmArboles";
             this.Load += new System.EventHandler(this.frmArboles_Load);
