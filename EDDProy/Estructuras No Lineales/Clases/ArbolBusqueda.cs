@@ -19,9 +19,19 @@ namespace EDDemo.Estructuras_No_Lineales
             strArbol = "";
             strRecorrido = "";
         }
-        //h
-      
-        
+       
+
+        public Boolean EstaVacio()
+        {
+            if (Raiz == null)
+                return true;
+            else
+                return false;
+        }
+        public NodoBinario RegresaRaiz()
+        {
+            return Raiz;
+        }
 
         public void InsertaNodo(int Dato, ref NodoBinario Nodo)
         {            
