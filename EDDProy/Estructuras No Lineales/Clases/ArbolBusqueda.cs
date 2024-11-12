@@ -19,7 +19,7 @@ namespace EDDemo.Estructuras_No_Lineales
             strArbol = "";
             strRecorrido = "";
         }
-
+        //h
         public Boolean EstaVacio()
         {
             if (Raiz == null)
