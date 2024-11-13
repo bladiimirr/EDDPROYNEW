@@ -201,5 +201,157 @@ namespace EDDemo.Estructuras_No_Lineales
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Llamamos al método para podar el árbol
+            miArbol.Podar(ref miRaiz);
+            miRaiz = null;
+
+            // Actualizamos la visualización del árbol usando la función de mostrar
+            miArbol.strArbol = ""; // Limpiamos la cadena del árbol
+            miArbol.MuestraArbolAcostado(1, miRaiz); // o usa Muestra(1, miRaiz) si prefieres esa función
+            txtArbol.Text = miArbol.strArbol; // Muestra el árbol en la caja de texto
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int valorAEliminar = int.Parse(textsucesor.Text);
+
+            // Llama a EliminarSucesor con el nodo raíz
+            miArbol.EliminarSucesor(valorAEliminar, ref miRaiz);
+
+            // Reasigna la raíz en caso de que se haya eliminado
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Actualiza la visualizacion del árbol
+            miArbol.strArbol = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Obtener el valor a eliminar directamente del cuadro de texto
+            int predEliminar = int.Parse(textpredecesor.Text);
+
+            // Llama a EliminarPredecesor con el nodo raíz
+            miArbol.EliminarPred(predEliminar, ref miRaiz);
+
+            // Reasigna la raíz en caso de que se haya eliminado
+            miRaiz = miArbol.RegresaRaiz();
+
+            // Actualiza la visualización del árbol
+            miArbol.strArbol = "";  // Limpiamos la representaciin en texto del arbol
+            miArbol.MuestraArbolAcostado(1, miRaiz);  // Generamos la representación visual del árbol
+            txtArbol.Text = miArbol.strArbol;  // Mostramos el árbol actualizado en la interfaz
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("se encuentra vacio, agrega datos o crea un arbol");
+                return;
+            }
+
+            // Verificamos si el arbol es lleno
+            if (miArbol.lleno(miRaiz))
+                MessageBox.Show("El arbol esta lleno.");
+            else
+                MessageBox.Show("El arbol no esta lleno.");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío.");
+                return;
+            }
+
+            bool esCompleto = miArbol.EsCompleto(miRaiz);
+
+            if (esCompleto)
+                MessageBox.Show("El árbol es completo.");
+            else
+                MessageBox.Show("El árbol no es completo.");
+        }
+
+
+
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+            miRaiz = miArbol.RegresaRaiz();
+
+            
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Llama al metodo para  las hojas y muestra el resultado de cuantas son
+            int numHojas = miArbol.hojas(miRaiz);
+            MessageBox.Show("El número de hojas en el árbol es: " + numHojas);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El arbol se encuentra vacio");
+                return;
+            }
+
+            // Llama al método para contar los nodos y muestra el resultado
+            int numNodos = miArbol.numNodos(miRaiz);
+            MessageBox.Show("El número de nodos en el árbol es: " + numNodos);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Calculamos la altura del árbol desde la raíz
+            int altura = miArbol.altura(miRaiz);
+            MessageBox.Show("La altura del árbol es: " + altura);
+        }
+
+
+
+
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
     }
-}
+
+    }
+ 
