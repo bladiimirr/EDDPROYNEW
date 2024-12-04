@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Recursividad;
 
 namespace EDDemo
 {
@@ -49,6 +51,92 @@ namespace EDDemo
 
         private void estructurasNoLibealesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void listasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListas FormListas = new FormListas();
+            FormListas.MdiParent = this;
+            FormListas.Show();
+        }
+
+        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormColas FormColas = new FormColas();
+            FormColas.MdiParent = this;
+            FormColas.Show();
+        }
+
+        private void listasDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListasDobles FormListasDobles = new FormListasDobles();
+            FormListasDobles.MdiParent = this;
+            FormListasDobles.Show(); 
+        }
+
+        private void listasCircularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCirculares FormCirculares = new FormCirculares();
+            FormCirculares.MdiParent = this;
+            FormCirculares.Show();
+        }
+
+        private void circularesDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormlistaDoble FormCircularesDobles = new FormlistaDoble();
+            FormCircularesDobles.MdiParent = this;
+            FormCircularesDobles.Show();
+        }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+
+            busquedabin busquedabin = new busquedabin();
+            busquedabin.MdiParent = this;
+            busquedabin.Show();
+
+
+
+
+        }
+
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRecursividad FormRecursividad = new FormRecursividad();
+            FormRecursividad.MdiParent = this;
+            FormRecursividad.Show();
+
+        }
+
+        private void exponenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exponencial exponencial = new exponencial();
+            exponencial.MdiParent = this;
+            exponencial.Show();
+        }
+
+        private void sumaArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            arreglosum arreglosum = new arreglosum();
+            arreglosum.MdiParent = this;
+            arreglosum.Show();
+        }
+
+        private void secuenciaFibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fibonacci fibonacci = new fibonacci();
+            fibonacci.MdiParent = this;
+            fibonacci.Show();
+        }
+
+        private void torreDeHannoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            hannoi hannoi = new hannoi();
+            hannoi.MdiParent = this;
+            hannoi.Show();
 
         }
     }
