@@ -18,18 +18,39 @@ namespace EDDemo.metodos_de_ordenamiento
         }
         private int[] arreglo;
 
+        private int[] OrdenarConBurbuja(int[] arreglo, out List<string> pasos)
+        {
+            pasos = new List<string>();  // Lista para almacenar los pasos de la ordenación
+            int n = arreglo.Length;
 
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (arreglo[j] > arreglo[j + 1])
+                    {
+                        // Intercambiamos
+                        int temp = arreglo[j];
+                        arreglo[j] = arreglo[j + 1];
+                        arreglo[j + 1] = temp;
 
+                        // Agregar el estado actual del arreglo a los pasos
+                        pasos.Add($"Paso {pasos.Count + 1}: {string.Join(", ", arreglo)}");
+                    }
+                }
+            }
 
+            return arreglo;
+        }
 
         private int[] GenerarArreglo(int cantidad)
         {
-            Random random = new Random();  // Instancia del generador de números 
-            int[] arreglo = new int[cantidad];  // Crea un arreglo del tamaño indicado
+            Random random = new Random();
+            int[] arreglo = new int[cantidad];
 
             for (int i = 0; i < cantidad; i++)
             {
-                arreglo[i] = random.Next(1, 101); // Genera números aleatorios entre 1 y 100
+                arreglo[i] = random.Next(1, 101);
             }
 
             return arreglo;
@@ -41,22 +62,19 @@ namespace EDDemo.metodos_de_ordenamiento
 
 
 
+
         private void Crear_Click(object sender, EventArgs e)
         {
 
-            int cantidad = (int)numericUpDown1.Value;  // Obtiene la cantidad seleccionada por el usuario
+            int cantidad = (int)numericUpDown1.Value;
 
-            // Validación para evitar que el número de elementos sea 0 o negativo
             if (cantidad <= 0)
             {
                 MessageBox.Show("Por favor, seleccione una cantidad mayor a 0.");
                 return;
             }
 
-            // Generar el arreglo con números aleatorios
             arreglo = GenerarArreglo(cantidad);
-
-            // Mostrar el arreglo en Label2
             label2.Text = "Arreglo: " + string.Join(", ", arreglo);
         }
 
@@ -68,6 +86,9 @@ namespace EDDemo.metodos_de_ordenamiento
             int[] arregloOrdenado = (int[])arreglo.Clone();  // Clona el arreglo para no modificar el original
             bool intercambiado;
 
+            // Limpiar el texto de label3 antes de comenzar
+            label3.Text = "Pasos de la ordenación:\n";
+
             for (int i = 0; i < n - 1; i++)
             {
                 intercambiado = false;
@@ -75,7 +96,8 @@ namespace EDDemo.metodos_de_ordenamiento
                 for (int j = 0; j < n - i - 1; j++)
                 {
                     pasos++;  // Incrementa el contador de pasos
-                              // Si el elemento actual es mayor que el siguiente, intercambiarlos
+
+                    // Si el elemento actual es mayor que el siguiente, intercambiarlos
                     if (arregloOrdenado[j] > arregloOrdenado[j + 1])
                     {
                         int temp = arregloOrdenado[j];
@@ -84,8 +106,8 @@ namespace EDDemo.metodos_de_ordenamiento
                         intercambiado = true;
                     }
 
-                    // Muestra los pasos intermedios en el Panel1
-                    panel1.Text += "\nPaso " + pasos + ": " + string.Join(", ", arregloOrdenado);
+                    // Mostrar el paso intermedio en label3
+                    label3.Text += "Paso " + pasos + ": " + string.Join(", ", arregloOrdenado) + "\n";
                 }
 
                 // Si no hubo intercambios, el arreglo ya está ordenado
@@ -122,14 +144,31 @@ namespace EDDemo.metodos_de_ordenamiento
             // Mostrar el arreglo original en el Label3
             label3.Text = "Arreglo Original: " + string.Join(", ", arreglo);
 
-            // Ordenar el arreglo usando el método Burbuja
-            int[] arregloOrdenado = Burbuja(arreglo, out int pasos);
+            // Ordenar el arreglo usando el método OrdenarConBurbuja
+            List<string> pasos;
+            int[] arregloOrdenado = OrdenarConBurbuja(arreglo, out pasos);
 
             // Mostrar el arreglo ordenado en el Label3
-            label3.Text = "Arreglo Ordenado: " + string.Join(", ", arregloOrdenado);
+            label1.Text = "Arreglo Ordenado: " + string.Join(", ", arregloOrdenado);
 
-            // Mostrar el número de pasos realizados en el Panel1
-            panel1.Text = "Pasos realizados: " + pasos;
+            // Mostrar los pasos realizados en el Panel1
+            label3.Text = "Pasos realizados:\n" + string.Join("\n", pasos);
+        }
+
+        private void burbuja_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Limpiar los resultados de los labels y el panel
+            label2.Text = "";
+            label3.Text = "";
+            label1.Text = "";
+
+            // Reiniciar el arreglo
+            arreglo = null;
         }
     }
     }
