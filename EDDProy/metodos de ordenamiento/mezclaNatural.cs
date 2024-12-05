@@ -145,7 +145,7 @@ namespace EDDemo.metodos_de_ordenamiento
             label3.Text = null;
 
             // Restablecer el NumericUpDown a su valor predeterminado (1)
-            numericUpDown1.Value = 1;
+            numericUpDown1.Value = 0;
 
             // Limpiar el arreglo
             arreglo = null;
