@@ -30,15 +30,15 @@ namespace EDDemo.Estructuras_Lineales
 
             if (int.TryParse(textBox2.Text, out valor) && int.TryParse(txtpos.Text, out x))
             {
-                Insertar(x, valor); // Se cambia "incertar" a "Insertar" para corregir el error de ortografía
-                Ver(); // Se cambia "ver()" a "Ver()" para seguir la convención de mayúsculas en métodos
+                Insertar(x, valor); 
+                Ver(); 
             }
             else
             {
                 MessageBox.Show("Se requiere ingresar un dato y una posición.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            // Limpiar los campos y enfocar el primer campo para que el usuario continúe de manera fluida
+            // Limpiar los campos 
             textBox2.Clear();
             txtpos.Clear();
             textBox2.Focus();
@@ -50,7 +50,7 @@ namespace EDDemo.Estructuras_Lineales
             listBox1.Items.Clear();
             if (inicial == null)
             {
-                return; // Si la lista está vacía
+                return; 
             }
 
             Nodos actual = inicial;
@@ -64,9 +64,9 @@ namespace EDDemo.Estructuras_Lineales
 
         private void Insertar(int posicion, int Dato)
         {
-            Nodos Nuevo = new Nodos();//instancia
-            Nuevo.Dato = Dato;//asignar al nuevo nodo 
-            Nuevo.Sig = null;// el siguinte es null
+            Nodos Nuevo = new Nodos();
+            Nuevo.Dato = Dato;//asignar 
+            Nuevo.Sig = null;// si null
             Nuevo.prev = null;
 
             if (inicial == null && final == null)

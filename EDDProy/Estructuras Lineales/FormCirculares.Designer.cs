@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox11 = new System.Windows.Forms.ListBox();
             this.txtdato = new System.Windows.Forms.TextBox();
             this.txtposision = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,15 +41,15 @@
             this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listBox11
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(159, 127);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(151, 279);
-            this.listBox1.TabIndex = 32;
+            this.listBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox11.FormattingEnabled = true;
+            this.listBox11.ItemHeight = 25;
+            this.listBox11.Location = new System.Drawing.Point(64, 127);
+            this.listBox11.Name = "listBox11";
+            this.listBox11.Size = new System.Drawing.Size(307, 279);
+            this.listBox11.TabIndex = 32;
             // 
             // txtdato
             // 
@@ -100,6 +100,7 @@
             this.button6.TabIndex = 27;
             this.button6.Text = "Vaciar";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -136,6 +137,7 @@
             this.button3.TabIndex = 24;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -168,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBox11);
             this.Controls.Add(this.txtdato);
             this.Controls.Add(this.txtposision);
             this.Controls.Add(this.label2);
@@ -188,7 +190,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox11;
         private System.Windows.Forms.TextBox txtdato;
         private System.Windows.Forms.TextBox txtposision;
         private System.Windows.Forms.Label label2;
