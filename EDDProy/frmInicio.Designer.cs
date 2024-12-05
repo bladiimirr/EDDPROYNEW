@@ -254,8 +254,9 @@ namespace EDDemo
             // burbujaToolStripMenuItem
             // 
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
-            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.burbujaToolStripMenuItem.Text = "Burbuja";
+            this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
             // 
             // quickSoftToolStripMenuItem
             // 
