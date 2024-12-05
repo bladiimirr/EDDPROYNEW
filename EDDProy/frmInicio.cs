@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.metodos_de_busqueda;
 using EDDemo.metodos_de_ordenamiento;
 using EDDemo.Recursividad;
 
@@ -183,6 +185,21 @@ namespace EDDemo
             radix radix = new radix();
             radix.MdiParent = this;
             radix.Show();
+        }
+
+        private void mezclaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            directam directam = new directam();
+            directam.MdiParent = this;
+            directam.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hashform Hashform = new Hashform();
+            Hashform.MdiParent = this;
+            Hashform.Show();
+
         }
     }
 }

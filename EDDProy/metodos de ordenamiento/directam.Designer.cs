@@ -43,7 +43,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(43, 250);
+            this.label3.Location = new System.Drawing.Point(43, 295);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(274, 29);
             this.label3.TabIndex = 19;
@@ -59,13 +59,14 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "limpiar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(43, 365);
+            this.label2.Location = new System.Drawing.Point(43, 242);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(274, 29);
             this.label2.TabIndex = 17;
@@ -89,6 +90,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Ordenar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -100,6 +102,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Asignar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -128,6 +131,7 @@
             this.Controls.Add(this.label1);
             this.Name = "directam";
             this.Text = "directam";
+            this.Load += new System.EventHandler(this.directam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
