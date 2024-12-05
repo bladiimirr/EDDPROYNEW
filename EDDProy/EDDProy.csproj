@@ -146,6 +146,24 @@
     <Compile Include="metodos de ordenamiento\intercalacion.Designer.cs">
       <DependentUpon>intercalacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="metodos de ordenamiento\quicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\quicksort.Designer.cs">
+      <DependentUpon>quicksort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\radix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\radix.Designer.cs">
+      <DependentUpon>radix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\shellsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\shellsort.Designer.cs">
+      <DependentUpon>shellsort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursividad\arreglosum.cs">
@@ -217,6 +235,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="metodos de ordenamiento\intercalacion.resx">
       <DependentUpon>intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metodos de ordenamiento\quicksort.resx">
+      <DependentUpon>quicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metodos de ordenamiento\radix.resx">
+      <DependentUpon>radix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metodos de ordenamiento\shellsort.resx">
+      <DependentUpon>shellsort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

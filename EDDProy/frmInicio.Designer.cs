@@ -261,20 +261,23 @@ namespace EDDemo
             // quickSoftToolStripMenuItem
             // 
             this.quickSoftToolStripMenuItem.Name = "quickSoftToolStripMenuItem";
-            this.quickSoftToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.quickSoftToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quickSoftToolStripMenuItem.Text = "QuickSoft";
+            this.quickSoftToolStripMenuItem.Click += new System.EventHandler(this.quickSoftToolStripMenuItem_Click);
             // 
             // shellSortToolStripMenuItem
             // 
             this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
-            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.shellSortToolStripMenuItem.Text = "ShellSort";
+            this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // radixToolStripMenuItem
             // 
             this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
-            this.radixToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.radixToolStripMenuItem.Text = "Radix";
+            this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
             // frmInicio
             // 

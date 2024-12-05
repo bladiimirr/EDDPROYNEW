@@ -159,5 +159,27 @@ namespace EDDemo
             burbuja.MdiParent = this;
             burbuja.Show();
         }
+
+        private void quickSoftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            quicksort quicksort = new quicksort();
+            quicksort.MdiParent = this;
+            quicksort.Show();
+        }
+
+        private void shellSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shellsort shellsort = new shellsort();
+
+        shellsort.MdiParent = this;
+            shellsort.Show();
+        }
+
+        private void radixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            radix radix = new radix();
+            radix.MdiParent = this;
+            radix.Show();
+        }
     }
 }
