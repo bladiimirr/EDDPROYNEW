@@ -26,6 +26,7 @@ namespace EDDemo.Estructuras_Lineales
         }
 
 
+
         private void Insertar(int dato, int posicion)
         {
             Nodos nuevo = new Nodos
@@ -34,18 +35,19 @@ namespace EDDemo.Estructuras_Lineales
                 Sig = null
             };
 
-          
+            // Caso de lista vacía
             if (inicial == null && final == null)
             {
                 inicial = nuevo;
                 final = nuevo;
-                nuevo.Sig = inicial; /
+                nuevo.Sig = inicial; // Mantener el ciclo cerrado
                 return;
             }
 
-            // Caso: Insertar al inicio
+            // Caso: Insertar al inicio (posición 1)
             if (posicion <= 1)
             {
+                // Si hay más de un nodo, insertar al inicio correctamente
                 nuevo.Sig = inicial;
                 inicial = nuevo;
                 final.Sig = inicial; // Mantener el ciclo cerrado
@@ -78,6 +80,33 @@ namespace EDDemo.Estructuras_Lineales
                 final = nuevo;
             }
         }
+
+
+
+
+
+
+
+
+
+
+        /*
+            
+
+             // Caso: Insertar en una posición intermedia
+             if (aux != final)
+             {
+                 nuevo.Sig = aux;
+                 prev.Sig = nuevo;
+             }
+             // Caso: Insertar al final
+             else
+             {
+                 nuevo.Sig = inicial;
+                 final.Sig = nuevo;
+                 final = nuevo;
+             }
+         }*/
 
         private void actualizarLista()
         {
@@ -180,7 +209,7 @@ namespace EDDemo.Estructuras_Lineales
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int valor, posicion;
+           int valor, posicion;
 
            
             if (int.TryParse(txtdato.Text, out valor) && int.TryParse(txtposision.Text, out posicion))
@@ -199,6 +228,11 @@ namespace EDDemo.Estructuras_Lineales
             txtdato.Clear();
             txtposision.Clear();
             txtdato.Focus();
+
+
+
+
+
         }
 
         private int eliminar(int posicion)
@@ -304,6 +338,89 @@ namespace EDDemo.Estructuras_Lineales
                 listBox11.Items.Clear();
                 MessageBox.Show("la lista sea vaciado");
             
+        }
+
+        private int Contar()
+        {
+            // Verificar si la lista está vacía
+            if (inicial == null)
+            {
+                MessageBox.Show("La lista está vacía.");
+                return 0;
+            }
+
+            // Variable para contar los nodos
+            int contador = 1; // Ya contamos el primer nodo (inicio)
+            Nodos nodoActual = inicial.Sig;
+
+            // Recorrer la lista circular comenzando desde el segundo nodo
+            while (nodoActual != inicial)
+            {
+                contador++;
+                nodoActual = nodoActual.Sig;
+            }
+
+            return contador;
+        }
+
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Contar() != 0)
+            {
+                Contar();
+                MessageBox.Show("hay " + Contar() + " datos en la lista");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        public void Buscar()
+        {
+            // Verificar si la lista está vacía
+            if (inicial == null)
+            {
+                MessageBox.Show("La lista se encuentra vacía.");
+                return;
+            }
+
+            // Intentar obtener el valor desde el TextBox
+            if (!int.TryParse(txtdato.Text, out int valor))
+            {
+                MessageBox.Show("Por favor, ingresa un valor numerico valido.");
+                return;
+            }
+
+            // Recorrer la lista circular buscndo e kvalor
+            Nodos actual = inicial;
+            do
+            {
+                if (actual.Dato == valor)
+                {
+                    MessageBox.Show("Dato encontrado");
+                    return; // Salir al encontrar el valor
+                }
+                actual = actual.Sig;
+            } while (actual != inicial);
+
+            // Si no seencontro el valor
+            MessageBox.Show("Dato no encontrado");
+        }
+
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Buscar();
+            txtdato.Text = "";
+            txtposision.Text = "";
+            txtdato.Focus();
         }
     }
 }
