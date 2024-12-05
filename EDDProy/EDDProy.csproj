@@ -140,11 +140,23 @@
     <Compile Include="metodos de ordenamiento\burbuja.Designer.cs">
       <DependentUpon>burbuja.cs</DependentUpon>
     </Compile>
+    <Compile Include="metodos de ordenamiento\directam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\directam.Designer.cs">
+      <DependentUpon>directam.cs</DependentUpon>
+    </Compile>
     <Compile Include="metodos de ordenamiento\intercalacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="metodos de ordenamiento\intercalacion.Designer.cs">
       <DependentUpon>intercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\mezclaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metodos de ordenamiento\mezclaNatural.Designer.cs">
+      <DependentUpon>mezclaNatural.cs</DependentUpon>
     </Compile>
     <Compile Include="metodos de ordenamiento\quicksort.cs">
       <SubType>Form</SubType>
@@ -233,8 +245,14 @@
     <EmbeddedResource Include="metodos de ordenamiento\burbuja.resx">
       <DependentUpon>burbuja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="metodos de ordenamiento\directam.resx">
+      <DependentUpon>directam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="metodos de ordenamiento\intercalacion.resx">
       <DependentUpon>intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metodos de ordenamiento\mezclaNatural.resx">
+      <DependentUpon>mezclaNatural.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="metodos de ordenamiento\quicksort.resx">
       <DependentUpon>quicksort.cs</DependentUpon>

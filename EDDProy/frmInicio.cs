@@ -143,7 +143,10 @@ namespace EDDemo
 
         private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            mezclaNatural mezclaNatural = new mezclaNatural();  
+            mezclaNatural.MdiParent = this;
+            mezclaNatural.Show();
+                
         }
 
         private void intercalaciónToolStripMenuItem_Click(object sender, EventArgs e)
