@@ -57,11 +57,11 @@ namespace EDDemo
             this.quickSoftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.metodosDeBusquedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.secuencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -232,7 +232,7 @@ namespace EDDemo
             this.mezclaDirectaToolStripMenuItem,
             this.mezclaNaturalToolStripMenuItem});
             this.externoToolStripMenuItem.Name = "externoToolStripMenuItem";
-            this.externoToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.externoToolStripMenuItem.Size = new System.Drawing.Size(171, 32);
             this.externoToolStripMenuItem.Text = "Externo";
             // 
             // intercalaciónToolStripMenuItem
@@ -264,42 +264,36 @@ namespace EDDemo
             this.shellSortToolStripMenuItem,
             this.radixToolStripMenuItem});
             this.internoToolStripMenuItem.Name = "internoToolStripMenuItem";
-            this.internoToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.internoToolStripMenuItem.Size = new System.Drawing.Size(171, 32);
             this.internoToolStripMenuItem.Text = "Interno";
             // 
             // burbujaToolStripMenuItem
             // 
             this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
-            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(191, 32);
             this.burbujaToolStripMenuItem.Text = "Burbuja";
             this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
             // 
             // quickSoftToolStripMenuItem
             // 
             this.quickSoftToolStripMenuItem.Name = "quickSoftToolStripMenuItem";
-            this.quickSoftToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.quickSoftToolStripMenuItem.Size = new System.Drawing.Size(191, 32);
             this.quickSoftToolStripMenuItem.Text = "QuickSoft";
             this.quickSoftToolStripMenuItem.Click += new System.EventHandler(this.quickSoftToolStripMenuItem_Click);
             // 
             // shellSortToolStripMenuItem
             // 
             this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
-            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(191, 32);
             this.shellSortToolStripMenuItem.Text = "ShellSort";
             this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
             // 
             // radixToolStripMenuItem
             // 
             this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
-            this.radixToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(191, 32);
             this.radixToolStripMenuItem.Text = "Radix";
             this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // metodosDeBusquedaToolStripMenuItem
             // 
@@ -317,12 +311,14 @@ namespace EDDemo
             this.secuencialToolStripMenuItem.Name = "secuencialToolStripMenuItem";
             this.secuencialToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.secuencialToolStripMenuItem.Text = "Secuencial";
+            this.secuencialToolStripMenuItem.Click += new System.EventHandler(this.secuencialToolStripMenuItem_Click);
             // 
             // binariaToolStripMenuItem
             // 
             this.binariaToolStripMenuItem.Name = "binariaToolStripMenuItem";
             this.binariaToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.binariaToolStripMenuItem.Text = "Binaria";
+            this.binariaToolStripMenuItem.Click += new System.EventHandler(this.binariaToolStripMenuItem_Click);
             // 
             // hashToolStripMenuItem
             // 
@@ -330,6 +326,12 @@ namespace EDDemo
             this.hashToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.hashToolStripMenuItem.Text = "Hash";
             this.hashToolStripMenuItem.Click += new System.EventHandler(this.hashToolStripMenuItem_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // frmInicio
             // 

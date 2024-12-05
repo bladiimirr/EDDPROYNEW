@@ -201,5 +201,19 @@ namespace EDDemo
             Hashform.Show();
 
         }
+
+        private void secuencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            secuencial secuencial = new secuencial();
+            secuencial.MdiParent = this;
+            secuencial.Show();
+        }
+
+        private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            binaria binaria = new binaria();
+            binaria.MdiParent = this;
+            binaria.Show();
+        }
     }
 }
