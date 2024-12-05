@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.metodos_de_ordenamiento;
 using EDDemo.Recursividad;
 
 namespace EDDemo
@@ -138,6 +139,18 @@ namespace EDDemo
             hannoi.MdiParent = this;
             hannoi.Show();
 
+        }
+
+        private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void intercalaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            intercalacionmetodo intercalacionmetodo = new intercalacionmetodo();
+            intercalacionmetodo.MdiParent = this;
+            intercalacionmetodo.Show();
         }
     }
 }
